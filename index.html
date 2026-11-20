@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="description" content="Ella Fiona Marie V. Sanchez — BSIT student at Mindoro State University, UI/UX designer and co-founder of Ugnay.">
+  <meta property="og:title" content="Ella Sanchez — UI/UX & aspiring web developer">
+  <meta property="og:description" content="BSIT student at Mindoro State University, UI/UX designer and co-founder of Ugnay.">
+  <meta property="og:image" content="assets/peyona.jpg">
+  <title>Ella Sanchez — UI/UX & Aspiring Web Developer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 4c-4 5-4 11 0 16 4-5 4-11 0-16Z' fill='%232c5aa0'/%3E%3Cpath d='M16 20c-6 0-9-5-9-11 5 2 8 5 9 11Zm0 0c6 0 9-5 9-11-5 2-8 5-9 11Z' fill='%236f95cf'/%3E%3Cpath d='M16 20v9' stroke='%235d7a5a' stroke-width='2'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js','js')</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Intro: a tulip draws itself, then the curtain lifts -->
+  <div class="loader" aria-hidden="true">
+    <svg class="loader-tulip" viewBox="0 0 200 320"><use href="#tulip-line"/></svg>
+    <p class="loader-name">Fiona Sanchez</p>
+  </div>
+
+  <!-- Wipe used for in-page navigation -->
+  <div class="wipe" aria-hidden="true">
+    <svg viewBox="0 0 200 320"><use href="#tulip-fill"/></svg>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor-label">View</span></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- Shared tulip drawings -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true">
+    <defs>
+      <symbol id="tulip-line" viewBox="0 0 200 320" overflow="visible"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path pathLength="1" d="M100 140C130 138 150 112 152 66c-22 8-44 26-52 74Z"/>
+        <path pathLength="1" d="M100 140C70 138 50 112 48 66c22 8 44 26 52 74Z"/>
+        <path pathLength="1" d="M100 34c-22 30-24 72 0 106 24-34 22-76 0-106Z"/>
+        <path pathLength="1" d="M100 140c0 56-2 112 0 170"/>
+        <path pathLength="1" d="M99 252c-28-32-52-32-64-26 14 30 38 40 64 34"/>
+        <path pathLength="1" d="M101 284c22-30 46-36 62-28-12 28-34 38-62 36"/>
+      </g></symbol>
+      <symbol id="tulip-fill" viewBox="0 0 200 320" overflow="visible">
+        <path d="M100 140C130 138 150 112 152 66c-22 8-44 26-52 74Z" fill="#2c5aa0"/>
+        <path d="M100 140C70 138 50 112 48 66c22 8 44 26 52 74Z" fill="#6f95cf"/>
+        <path d="M100 34c-22 30-24 72 0 106 24-34 22-76 0-106Z" fill="#4a77bb"/>
+        <path d="M100 140c0 56-2 112 0 170" stroke="#5d7a5a" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M99 252c-28-32-52-32-64-26 14 30 38 40 64 34M101 284c22-30 46-36 62-28-12 28-34 38-62 36" fill="#8aa585"/>
+      </symbol>
+      <symbol id="arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Ella Sanchez, back to top">
+      <svg class="wordmark-tulip" viewBox="0 0 200 320" aria-hidden="true"><use href="#tulip-fill"/></svg>
+      <span>Fiona Sanchez</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Menu</span>
+      <span class="menu-lines" aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Main">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#journey">Journey</a>
+      <a class="nav-cta magnetic" href="#contact">Let’s talk<svg aria-hidden="true"><use href="#arrow"/></svg></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="petal-rain" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <h1 id="hero-title" class="split">
+          <span class="line"><span>Meet Fiona.</span></span>
+          <span class="line"><em>Ideas into</em></span>
+          <span class="line"><em>experiences.</em></span>
+        </h1>
+        <p class="hero-intro reveal-up">
+          I’m <strong>Ella Fiona Marie V. Sanchez</strong>, a BSIT student at Mindoro State University and the UI/UX co-founder of Ugnay. I love turning creative ideas into technology that people can actually use.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a class="button magnetic" href="#work">See my work<svg aria-hidden="true"><use href="#arrow-down"/></svg></a>
+          <a class="text-link" href="#about">A little about me</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="petals" aria-hidden="true">
+          <svg class="petal" style="--x:8%;--y:14%;--d:.6;--r:-24deg" viewBox="0 0 40 60"><path d="M20 2C6 18 6 42 20 58 34 42 34 18 20 2Z"/></svg>
+          <svg class="petal" style="--x:88%;--y:6%;--d:1.2;--r:30deg" viewBox="0 0 40 60"><path d="M20 2C6 18 6 42 20 58 34 42 34 18 20 2Z"/></svg>
+          <svg class="petal" style="--x:94%;--y:70%;--d:.9;--r:70deg" viewBox="0 0 40 60"><path d="M20 2C6 18 6 42 20 58 34 42 34 18 20 2Z"/></svg>
+          <svg class="petal" style="--x:-4%;--y:78%;--d:1.5;--r:-60deg" viewBox="0 0 40 60"><path d="M20 2C6 18 6 42 20 58 34 42 34 18 20 2Z"/></svg>
+        </div>
+        <figure class="portrait clip-reveal" data-cursor="Hello">
+          <img src="assets/peyona.jpg" alt="Portrait of Ella Sanchez" width="1254" height="1254" fetchpriority="high">
+        </figure>
+        <div class="petal-rain is-front" aria-hidden="true"></div>
+        <svg class="hero-tulip draw" viewBox="0 0 200 320" aria-hidden="true"><use href="#tulip-line"/></svg>
+        <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="badge-circle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+          <text><textPath href="#badge-circle" textLength="286" lengthAdjust="spacing">UI/UX · CO-FOUNDER · UGNAY · BSIT · </textPath></text>
+          <use href="#tulip-fill" x="44" y="36" width="32" height="48"/>
+        </svg>
+      </div>
+
+      <dl class="hero-meta reveal-up">
+        <div><dt>Based in</dt><dd>Calapan City, Oriental Mindoro</dd></div>
+        <div><dt>Studying</dt><dd>BSIT, Mindoro State University</dd></div>
+        <div><dt>Building</dt><dd>Ugnay, as UI/UX co-founder</dd></div>
+      </dl>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title" class="sr-only">About Fiona</h2>
+      <p class="statement" data-words>My goal is to become a web developer who turns ideas into innovative and meaningful digital experiences.</p>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I grew into tech through <strong>VendoMachine</strong>, our Senior High School capstone, which won Best in Research and Best Capstone Project.</p>
+          <p>More recently I co-founded <strong>Project Ugnay</strong>, a community platform selected as a finalist in the IBIBES Incubation Program. Both taught me that good technology starts with people: teammates, neighbours, and whoever ends up using the thing.</p>
+          <p>I’m always eager to learn, explore new opportunities, and challenge myself to grow. Thank you for visiting.</p>
+        </div>
+        <ul class="honours" aria-label="Recognition">
+          <li><span class="honour-title">Finalist</span><span>IBIBES Incubation Program · Ugnay</span></li>
+          <li><span class="honour-title">Best Capstone Project</span><span>Senior High · VendoMachine</span></li>
+          <li><span class="honour-title">Best in Research</span><span>Senior High · VendoMachine</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work-head">
+        <h2 id="work-title" class="split"><span class="line"><span>Selected</span></span> <span class="line"><em>work</em></span></h2>
+        <p>Two projects, built with teams I’m proud of.</p>
+      </div>
+
+      <article class="ugnay" aria-labelledby="ugnay-title">
+        <div class="ugnay-sticky">
+          <div class="ugnay-text">
+            <p class="ugnay-mark" aria-hidden="true"><span></span><span></span></p>
+            <h3 id="ugnay-title">Ugnay</h3>
+            <ol class="chapters">
+              <li class="chapter is-active">
+                <h4>Hanap. Ugnay. Gawa.</h4>
+                <p>A community platform for booking trusted local workers near you — <em>mabilis, ligtas, at kapitbahay mo lang.</em></p>
+              </li>
+              <li class="chapter">
+                <h4>My role: UI/UX & co-founder</h4>
+                <p>I shape how Ugnay looks and feels, from the first screen a neighbour sees on their phone to the dashboard the team uses to verify workers and review bookings.</p>
+              </li>
+              <li class="chapter">
+                <h4>Finalist, IBIBES Incubation Program</h4>
+                <p>Ugnay was selected as a finalist in the IBIBES Incubation Program. Its admin dashboard already maps worker coverage across Calapan City.</p>
+              </li>
+            </ol>
+            <div class="chapter-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          </div>
+
+          <div class="ugnay-stage">
+            <figure class="device-web" data-cursor="Admin">
+              <div class="device-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="assets/ugnay-web.png" alt="Ugnay admin dashboard showing verified workers, customers and bookings for Calapan City" width="1892" height="875" loading="lazy">
+            </figure>
+            <figure class="device-phone" data-cursor="App">
+              <img src="assets/ugnay-app.jpg" alt="Ugnay mobile app welcome screen: Hanap. Ugnay. Gawa." width="720" height="1612" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <div class="ugnay-award">
+        <p class="ugnay-award-line split"><span class="line"><span>Ugnay at the Provincial</span></span> <span class="line"><em>Startup Convention.</em></span></p>
+        <figure class="clip-reveal" data-cursor="Award">
+          <img src="assets/ugnay-award.jpg" alt="Project Ugnay receiving its certificate on stage at the Provincial Startup Convention" width="1920" height="1280" loading="lazy">
+        </figure>
+      </div>
+
+      <article class="vendo" aria-labelledby="vendo-title">
+        <figure class="vendo-photo clip-reveal" data-cursor="2025">
+          <img src="assets/vendo-machine-prototype.jpg" alt="The VendoMachine prototype: a wooden waste-to-coin exchanger with its research poster" width="828" height="1792" loading="lazy">
+        </figure>
+
+        <div class="vendo-body">
+          <h3 id="vendo-title" class="split"><span class="line"><span>VendoMachine</span></span></h3>
+          <p class="vendo-lead">A machine that exchanges recyclable waste for coins. Our Senior High capstone, March 2025.</p>
+
+          <div class="vendo-points">
+            <div>
+              <h4>Problem</h4>
+              <p>Improper waste disposal and low interest in recycling add to pollution. We wanted a reason for people to recycle.</p>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <p>A waste-to-coin exchange machine that accepts recyclables and pays out coins, promoting recycling and responsible waste management through technology.</p>
+            </div>
+            <div>
+              <h4>What I learned</h4>
+              <p>Research, teamwork, creativity and problem-solving, and that technology can solve real problems close to home.</p>
+            </div>
+          </div>
+
+          <ul class="awards" aria-label="Awards">
+            <li>Best in Research</li>
+            <li>Best Capstone Project</li>
+          </ul>
+          <p class="team">With Edward Ordanza, Anjhelo Reyes and Eizeil Rodriguez.</p>
+        </div>
+
+        <figure class="vendo-slide clip-reveal" data-cursor="Award">
+          <img src="assets/best-capstone-project.jpg" alt="Capstone defense slide, A Machine That Exchanges Waste to Coin, with the Best Capstone Project seal" width="1672" height="941" loading="lazy">
+        </figure>
+      </article>
+    </section>
+
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <h2 id="journey-title" class="split"><span class="line"><span>Every chapter</span></span> <span class="line"><em>got me here.</em></span></h2>
+
+      <!-- TODO(Ella): add years for the first three schools inside each .stage-years -->
+      <ol class="stages">
+        <li class="stage">
+          <svg class="grow" viewBox="0 0 80 120" aria-hidden="true"><ellipse cx="40" cy="104" rx="10" ry="7"/><path d="M14 112h52"/></svg>
+          <span class="stage-level">Elementary</span>
+          <span class="stage-school">Bayanan II Elementary School</span>
+          <span class="stage-years"></span>
+        </li>
+        <li class="stage">
+          <svg class="grow" viewBox="0 0 80 120" aria-hidden="true"><path d="M40 112V78"/><path d="M40 88c-10-12-20-12-24-8 6 10 14 12 24 8Zm0-4c8-10 18-12 22-8-6 10-14 12-22 8Z"/><path d="M14 112h52"/></svg>
+          <span class="stage-level">Junior High</span>
+          <span class="stage-school">Mindoro State University Laboratory High School</span>
+          <span class="stage-years"></span>
+        </li>
+        <li class="stage">
+          <svg class="grow" viewBox="0 0 80 120" aria-hidden="true"><path d="M40 112V50"/><path d="M40 50c-8-6-9-18-0-28 9 10 8 22 0 28Z"/><path d="M40 92c-12-12-22-10-26-6 8 10 16 10 26 6Z"/><path d="M14 112h52"/></svg>
+          <span class="stage-level">Senior High</span>
+          <span class="stage-school">Oriental Mindoro National High School</span>
+          <span class="stage-years"></span>
+        </li>
+        <li class="stage is-now">
+          <svg class="grow" viewBox="0 0 80 120" aria-hidden="true"><path d="M40 112V46"/><path class="bloom" d="M40 46c-14 0-22-10-22-28 10 4 18 12 22 28Zm0 0c14 0 22-10 22-28-10 4-18 12-22 28Zm0 0c-9-12-9-28 0-40 9 12 9 28 0 40Z"/><path d="M40 92c-12-12-22-10-26-6 8 10 16 10 26 6Zm0 8c10-12 20-12 24-8-8 10-14 10-24 8Z"/><path d="M14 112h52"/></svg>
+          <span class="stage-level">College · BSIT</span>
+          <span class="stage-school">Mindoro State University</span>
+          <span class="stage-years">2026 — present</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <svg class="contact-tulip draw" viewBox="0 0 200 320" aria-hidden="true"><use href="#tulip-line"/></svg>
+      <h2 id="contact-title" class="split">
+        <span class="line"><span>Have a good idea?</span></span>
+        <span class="line"><em>Let’s talk.</em></span>
+      </h2>
+      <p class="contact-intro">I’m always glad to meet kind people, hear about interesting projects, and learn something new.</p>
+      <a class="email magnetic" href="mailto:sanchezellafionamariev@gmail.com?subject=Hello%20Fiona">
+        <span>sanchezellafionamariev</span><span>@gmail.com</span>
+      </a>
+      <ul class="socials">
+        <li><a href="https://www.facebook.com/ella.fiona.sanchez" target="_blank" rel="noopener">Facebook<svg aria-hidden="true"><use href="#arrow"/></svg></a></li>
+        <li><a href="https://github.com/peyonaaa" target="_blank" rel="noopener">GitHub<svg aria-hidden="true"><use href="#arrow"/></svg></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Calapan City, Oriental Mindoro</span>
+    <a href="#home" class="text-link">Back to top</a>
+    <span>© 2026 Ella Sanchez · peyonaaa</span>
+  </footer>
+</body>
+</html>
